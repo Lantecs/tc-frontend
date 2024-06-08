@@ -28,7 +28,6 @@ form_login.onsubmit = async (e) => {
       Accept: "application/json",
     },
     body: formData,
-    
   });
 
   // Get response if 200-299 status code
