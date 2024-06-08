@@ -1,7 +1,7 @@
 import {
   backendURL,
-  successNotification,
   errorNotification,
+  successNotification,
 } from "../utils/utils.js";
 
 // Form Register
@@ -48,7 +48,7 @@ form_register.onsubmit = async (e) => {
   // Get response if 422 status code
   else if (response.status == 422) {
     const json = await response.json();
-
+    console.error("Validation error:", json);
     errorNotification(json.message, 5);
   }
 

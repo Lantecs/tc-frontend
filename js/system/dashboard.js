@@ -17,6 +17,7 @@ const btn_logout = document.getElementById("btn_logout");
 btn_logout.onclick = async () => {
   // Access Logout API Endpoint
   const response = await fetch(backendURL + "/api/logout", {
+    method: "POST",
     headers: {
       Accept: "application/json",
       Authorization: "Bearer " + localStorage.getItem("token"),
