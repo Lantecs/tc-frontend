@@ -5,9 +5,9 @@ setRouter();
 
 // Backend URL
 const backendURL =
-  "https://b184-216-247-56-68.ngrok-free.app/backend-techcare-main/public";
+  "https://a033-216-247-56-68.ngrok-free.app/backend-techcare-main/public";
 
-// Get Logged User Profile
+// Get Logged User profile
 async function getLoggedUser() {
   // Access User Profile API Endpoint
   const response = await fetch(backendURL + "/api/profile/show", {
