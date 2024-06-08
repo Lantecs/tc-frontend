@@ -5,7 +5,7 @@ setRouter();
 
 // Backend URL
 const backendURL =
-  "https://a033-216-247-56-68.ngrok-free.app/backend-techcare-main/public";
+  "https://edf1-216-247-56-68.ngrok-free.app/backend-techcare-main/public";
 
 // Get Logged User profile
 async function getLoggedUser() {
