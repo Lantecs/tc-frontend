@@ -13,7 +13,7 @@ async function getLoggedUser() {
   const response = await fetch(backendURL + "/api/profile/show", {
     headers: {
       Accept: "application/json",
-      "ngrok-skip-browser-warning": "62490",
+      "ngrok-skip-browser-warning": "any",
       Authorization: "Bearer " + localStorage.getItem("token"),
     },
   });
