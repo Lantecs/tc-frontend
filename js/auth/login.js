@@ -1,7 +1,7 @@
 import {
   backendURL,
-  errorNotification,
   successNotification,
+  errorNotification,
 } from "../utils/utils.js";
 
 // Form Login
@@ -28,7 +28,7 @@ form_login.onsubmit = async (e) => {
       Accept: "application/json",
     },
     body: formData,
-    mode: "no-cors",
+    
   });
 
   // Get response if 200-299 status code
@@ -52,7 +52,7 @@ form_login.onsubmit = async (e) => {
   else if (response.status == 422) {
     const json = await response.json();
 
-    console.error("Validation error:", json);
+    console.error("Validation error:", json); 
 
     errorNotification(json.message, 5);
   }
